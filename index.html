@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="blurDiv">
+    <div class="resultBoxDiv">
+      <p class="textInsideResult">
+        Your Points : 
+        Dealer Points :
+      </p>
+      <p class="resultSpan">
+          Result  
+      </p>
+      <p class="playAgain"  onclick="location.reload();">
+        Play again . . .
+      </p>
+    </div>
+  </div>
+  <section id = "dealerSection" role="region">
+    <h1>Dealer</h1>
+    <div class = "dealerImgDiv">
+      <div class = "flipBothCards">
+        <div class = "backOfCard">
+          <img src="54DeckOfCards/back.png" alt="closed-card">
+        </div>
+        <div class = "frontOfCard">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id = "controlSection" role="region">
+        <button aria-label = "hit" value="hit" class = "hitAndStayButtons">Hit</button>
+				<button aria-label = "stay" value="stay" class = "hitAndStayButtons">Stay</button>
+  </section>
+  <section id = "playerSection" role="region">
+    <div id="playerImgDiv">
+      
+    </div>
+    <h1>You</h1>
+  </section>
+<script src = "script.js"></script>
+</body>
+</html>
